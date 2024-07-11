@@ -1,0 +1,26 @@
+/* Updated CSS code */
+body {
+    color: #fc1808;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #2980b9;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0ed2e4;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

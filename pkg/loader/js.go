@@ -17,5 +17,7 @@ func JSLoader() {
         http.ServeFile(w, r, "./static/js/home.js")
     })
 
-    
+    http.HandleFunc("/scripts/main.js", func(w http.ResponseWriter, r *http.Request) {
+        http.ServeFile(w, r, "./static/js/main.js")
+    }) 
 }

@@ -16,4 +16,8 @@ func CSSLoader() {
     http.HandleFunc("/stylesheets/contact.css", func(w http.ResponseWriter, r *http.Request) {
         http.ServeFile(w, r, "./static/css/contact.css")
     })
+
+    http.HandleFunc("/stylesheets/main.css", func(w http.ResponseWriter, r *http.Request) {
+        http.ServeFile(w, r, "./static/css/main.css")
+    })
 }

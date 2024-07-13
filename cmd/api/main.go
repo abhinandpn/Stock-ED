@@ -7,8 +7,12 @@ import (
 )
 
 func main() {
+	// Register asset loader
+	// loader.AssetLoader()
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("./static/asset"))))
+
 	// Register handlers for CSS, HTML, JS
-	loader.AboutCssLoader()
+	loader.CSSLoader()
 	loader.HtmlLoader()
 	loader.JSLoader()
 

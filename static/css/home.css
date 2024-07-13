@@ -1,26 +1,6 @@
 /* Updated CSS code */
 body {
-    color: #49f500;
+    background-color: #000000; /* Set background color to black */
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease;
-}
-
-h1 {
-    cursor: pointer;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-h1:hover {
-    color: #2980b9;
-}
-
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #2c3e50;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }

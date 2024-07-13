@@ -16,4 +16,6 @@ func HtmlLoader() {
     http.HandleFunc("/contact", func(w http.ResponseWriter, r *http.Request) {
         http.ServeFile(w, r, "./static/html/contact.html")
     })
+
+    
 }

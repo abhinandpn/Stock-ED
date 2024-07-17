@@ -22,6 +22,7 @@ Project Root
 │   │   ├── about.css
 │   │   ├── contact.css
 │   │   └── home.css
+│   │   └── main.css
 │   ├── html
 │   │   ├── about.html
 │   │   ├── contact.html
@@ -30,6 +31,7 @@ Project Root
 │       ├── about.js
 │       ├── contact.js
 │       └── home.js
+│       └── main.js
 ├── tmp (if used)
 ├── .air.toml
 ├── go.mod

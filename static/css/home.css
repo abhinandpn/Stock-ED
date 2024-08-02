@@ -1,0 +1,148 @@
+.main-head {
+    height: 100px;
+    background-color: var(--green);
+    filter: blur(200px); /* Reduced blur to avoid excessive size */
+    position: relative; /* Position relative to allow absolute positioning of child elements */
+    display: flex; /* Use flexbox to center the child */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.main-txt {
+    position: relative; /* Ensure the text is not affected by the parent's blur */
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Example premium font */
+    font-size: 3em; /* Adjust as needed for your design */
+    /* letter-spacing: 0.05em; Optional, for a more premium look */
+    filter: blur(0); /* Reduced blur to avoid excessive size */
+}
+.head-des{
+    margin-top: -10;
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+.content{
+    color: aliceblue;
+    text-align:center ;
+    position: relative; /* Ensure the text is not affected by the parent's blur */
+    margin-top: -80px;
+    font-size: large;
+    font-weight: bold;
+}
+.txt-class{
+    margin-top: 50px;
+    display: flex;
+    height: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 5px 5px 15px 3px hsl(157, 100%, 50%);
+    border-radius: 30px;
+    background-color: black;
+    align-items: center;
+    
+}
+.txt-main{
+    color: white;
+    font-size: 2em;
+    font-family:fantasy;
+    margin-left: 200px;
+    /* margin-top: 80px; */
+    font-weight: bold;
+    position: relative;
+}
+.imag-div1{
+    height: 200px;
+    margin-left: 200px;
+    /* margin-top: 30px; */
+    position: relative;
+}
+.sect-div{
+    height: 900px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(0, 232, 244);
+    box-shadow: 0px 2px 100px 30px rgba(0, 232, 244, 0.076);
+    background-color: rgba(255, 255, 255, 0.078);
+    text-align: center;
+}
+
+
+/* Reg */
+
+.rep-txt{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+.reg-1box{
+   margin-left: 150px;
+}
+.reg-dot{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -200px;
+    /* display: inline-block; */
+    background-color: violet;
+
+    border-width: 50px;
+    border-style: solid;
+    border-width: solid;
+    border-color: rgb(0, 232, 244);
+}
+.reg-box{
+    height: 200px;
+    width: 75%;
+    background-color: yellow;
+    border-radius: 30px;
+    margin-left: 100px;
+}
+.reg-sml-box{
+    height: 180px;
+    width: 5%;
+    margin-top: -190px;
+    background-color: tan;
+    border-radius: 30px;
+    margin-left: 850px;
+}
+.reg-line{
+    height: 150px;
+    width: 1%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-top: -165px;
+    margin-left: 650px;
+}
+.reg-img-icn{
+    height: 150px;
+    width: 150px;
+    margin-left: 525px;
+    margin-top:-150px;
+}
+.reg-txt-1{
+    font-size: 50px;
+    font-family:fantasy;
+    margin-left: -120px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+.reg-txt-num1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family:fantasy;
+}
+
+.reg-3box{
+    display: grid;
+    gap: 50px;
+}

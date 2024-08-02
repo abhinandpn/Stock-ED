@@ -1,6 +1,4 @@
-/* Updated CSS code */
-body {
-    background-color: #000000; /* Set background color to black */
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease;
+:root {
+--green : hsl(114, 93%, 37%);
+--shadow :hsl(157, 100%, 50%);
 }

@@ -94,7 +94,6 @@
     margin-top: -200px;
     /* display: inline-block; */
     background-color: violet;
-
     border-width: 50px;
     border-style: solid;
     border-width: solid;
@@ -145,4 +144,79 @@
 .reg-3box{
     display: grid;
     gap: 50px;
+}
+
+/* .why-learn{
+
+} */
+.why-learn-head {
+    color: white;
+    font-size: 4em;
+    font-family: fantasy;
+    margin: 0 auto; /* Center the element horizontally */
+    font-weight: bolder; /* Boldness level */
+    position: relative;
+    text-align: center; /* Center the text within the element */   
+    padding-top: 50px; 
+}
+
+.whyl-box-all {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 20px; /* Add space between the boxes */
+}
+
+.why-l-box {
+    height: 230px;
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 40px;
+    border-top: 2px solid rgb(77, 255, 0); /* Top border with color */
+    border-right: 2px solid rgb(77, 255, 0); /* Right border with color */
+    border-left: 2px solid rgb(77, 255, 0); /* Left border with color */
+    border-bottom: none; /* No border on the bottom */
+    /* box-shadow: 2px 2px 2px 2px var(--shadow); */
+    /* background-color: rgba(255, 255, 255, 0.078); */
+    text-align: center;
+    color: white;
+}
+
+.why-learn-note-box {
+    height: 250px;
+    width: 50%;
+    margin: 70px auto;
+    /* background-color: rgb(214, 130, 13); */
+}
+
+.why-learn-bold-line {
+    height: 170px;
+    width: 10px;
+    
+    /* Green to transparent gradient */
+    background: linear-gradient(to bottom, var(--green), rgba(0, 128, 0, 0)); 
+
+    border-radius: 40px 40px 0 0; /* Rounded top corners only */
+}
+
+
+.why-learn-note-head {
+    padding-left: 40px;
+    color: white;
+    font-size: 4em;
+    font-family: fantasy;
+    margin: 0 auto;
+    font-weight: bolder;
+    text-align: center;
+    /* padding-top: 50px; */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.why-learn-note-content {
+    padding-left: 40px;
+    color: white;
+    text-align: center;
+    /* padding-top: 10px; */
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2.5em;
 }

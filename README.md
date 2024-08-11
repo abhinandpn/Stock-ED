@@ -23,6 +23,7 @@ Project Root
 │   │   ├── contact.css
 │   │   └── home.css
 │   │   └── main.css
+│   │   └── other.css
 │   ├── html
 │   │   ├── about.html
 │   │   ├── contact.html

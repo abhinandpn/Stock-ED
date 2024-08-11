@@ -1,31 +1,34 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
+    "fmt"
+    "net/http"
 
-	"github.com/abhinandpn/Stock-ED/pkg/loader" // Adjust import path as needed
+    "github.com/abhinandpn/Stock-ED/pkg/loader"  // Import the loader package
+    "github.com/abhinandpn/Stock-ED/pkg/route"   // Import the route package
 )
 
 func main() {
-	// Register asset loader
-	loader.AssetLoader()
-	fmt.Println("asset loading complete...")
+    // Register asset loader
+    loader.AssetLoader()
+    fmt.Println("Asset loading complete...")
 
-	// Register handlers for CSS, HTML, JS
-	loader.CSSLoader()
-	loader.HtmlLoader()
-	loader.JSLoader()
-	fmt.Println("css,html,js loding complete...")
+    // Register routes for HTML files
+    route.RegisterRoutes()
 
-	// Serve static files (CSS, JS, HTML)
-	fs := http.FileServer(http.Dir("static"))
-	http.Handle("/stylesheets/", fs)
-	http.Handle("/scripts/", fs)
-    fmt.Println("server static file accomplished.....")
+    // Register handlers for CSS and JS
+    loader.CSSLoader()
+    loader.JSLoader()
+    fmt.Println("CSS and JS loading complete...")
 
-	// Start HTTP server
-	fmt.Println("server runnign at port 8080")
-    fmt.Println("check - http://localhost:8080/")
-	http.ListenAndServe(":8080", nil)
+    // Serve static files (CSS, JS)
+    fs := http.FileServer(http.Dir("static"))
+    http.Handle("/stylesheets/", http.StripPrefix("/stylesheets/", fs))
+    http.Handle("/scripts/", http.StripPrefix("/scripts/", fs))
+    fmt.Println("Serving static files accomplished.....")
+
+    // Start HTTP server
+    fmt.Println("Server running at port 8080")
+    fmt.Println("Check - http://localhost:8080/")
+    http.ListenAndServe(":8080", nil)
 }

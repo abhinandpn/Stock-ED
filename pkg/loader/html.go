@@ -1,21 +1,6 @@
 package loader
 
-import (
-    "net/http"
-)
-
+// HtmlLoader can handle other HTML-related processing if necessary.
 func HtmlLoader() {
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        http.ServeFile(w, r, "./static/html/home.html")
-    })
-
-    http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
-        http.ServeFile(w, r, "./static/html/about.html")
-    })
-
-    http.HandleFunc("/contact", func(w http.ResponseWriter, r *http.Request) {
-        http.ServeFile(w, r, "./static/html/contact.html")
-    })
-
-    
+    // Any non-routing HTML logic can go here, if needed.
 }

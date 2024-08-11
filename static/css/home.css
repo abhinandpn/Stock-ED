@@ -78,7 +78,7 @@
 
 /* Reg */
 
-.rep-txt{
+.reg-txt{
     font-size: large;
     font-weight: bold;
     color: white;
@@ -93,7 +93,7 @@
     border-radius: 50%;
     margin-top: -200px;
     /* display: inline-block; */
-    background-color: violet;
+    background-color: rgb(9, 9, 9);
     border-width: 50px;
     border-style: solid;
     border-width: solid;
@@ -128,17 +128,19 @@
     margin-left: 525px;
     margin-top:-150px;
 }
-.reg-txt-1{
+.reg-txt-head{
     font-size: 50px;
     font-family:fantasy;
     margin-left: -120px;
     margin-top: 20px;
     padding-top: 40px;
+    color: white;
 }
 .reg-txt-num1{
     font-size: 80px;
     font-weight: bold;
     font-family:fantasy;
+    color: white;
 }
 
 .reg-3box{
@@ -194,7 +196,6 @@
     
     /* Green to transparent gradient */
     background: linear-gradient(to bottom, var(--green), rgba(0, 128, 0, 0)); 
-
     border-radius: 40px 40px 0 0; /* Rounded top corners only */
 }
 
@@ -220,3 +221,152 @@
     white-space: nowrap;
     font-size: 2.5em;
 }
+
+/* section 4 */
+
+
+.tstm-head{
+    color: white;
+    font-size: 4em;
+    font-family: fantasy;
+    margin: 0 auto; /* Center the element horizontally */
+    font-weight: bolder; /* Boldness level */
+    position: relative;
+    text-align: center; /* Center the text within the element */   
+    padding-top: 50px;
+}
+.tstm-full{
+    height: 700px;
+    width: 1200px;
+    background-color: aqua;
+    margin-left: 350px;
+}
+
+/* section contact form */
+
+
+.tstm-head{
+    color: white;
+    font-size: 4em;
+    font-family: fantasy;
+    margin: 0 auto; /* Center the element horizontally */
+    font-weight: bolder; /* Boldness level */
+    position: relative;
+    text-align: center; /* Center the text within the element */   
+    padding-top: 50px;
+}
+.tstm-full{
+    height: 700px;
+    width: 1200px;
+    background-color: aqua;
+    margin-left: 350px;
+}
+
+/* section contact form */
+
+.int-contact-full {
+    height: 700px;
+    width: 100%;
+    position: relative; /* Ensure the container is relatively positioned */
+}
+
+.int-contact-blur {
+    height: 300px;
+    width: 1000px;
+    background-color: var(--contactgreen);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(180px);
+}
+
+.int-contact-box {
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.112);
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between; /* Create space between text and form */
+    padding: 40px;
+}
+
+.int-contact-head {
+    color: white;
+    font-size: 4em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.int-contact-mail,
+.int-contact-txt {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.int-contact-form {
+    color: white;
+    width: 40%; /* Adjust width of the form */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns the columns in a row */
+}
+
+.form-col {
+    width: 48%; /* Adjust width for two columns */
+}
+
+.int-contact-form input,
+.int-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.int-contact-form input[type="submit"] {
+    background-color: var(--contactgreen);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to separate the submit button */
+}
+
+.int-contact-form input[type="submit"]:hover {
+    background-color: darkorchid;
+}
+
+
+/* image sectoin */
+
+.img-group-full {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: 100vh; Full viewport height or adjust as needed */
+}
+
+.img-group {
+    width: 70%; /* Adjust width as needed */
+    height: 600px; /* Adjust height as needed */
+    border-radius: 20px; /* Adjust the radius to your desired value */
+    border: 3px solid var(--contactgreen); /* Green border around the image */
+    box-shadow: 0 0 0px var(--contactgreen); /* Green blurred shadow effect */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
